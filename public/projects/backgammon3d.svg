@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg-board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <linearGradient id="bg-felt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <radialGradient id="bg-checker-light" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
+    </radialGradient>
+    <radialGradient id="bg-checker-dark" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bg-board)"/>
+
+  <g transform="translate(300 165) rotate(-12) skewX(-18)">
+    <rect x="-220" y="-90" width="440" height="180" rx="8" fill="url(#bg-felt)" stroke="#10b981" stroke-width="2"/>
+
+    <g fill="#34d399" opacity="0.85">
+      <polygon points="-210,-90 -190,-90 -200,-10"/>
+      <polygon points="-170,-90 -150,-90 -160,-10"/>
+      <polygon points="-130,-90 -110,-90 -120,-10"/>
+      <polygon points="-90,-90 -70,-90 -80,-10"/>
+      <polygon points="-50,-90 -30,-90 -40,-10"/>
+      <polygon points="-10,-90 10,-90 0,-10"/>
+      <polygon points="30,-90 50,-90 40,-10"/>
+      <polygon points="70,-90 90,-90 80,-10"/>
+      <polygon points="110,-90 130,-90 120,-10"/>
+      <polygon points="150,-90 170,-90 160,-10"/>
+      <polygon points="190,-90 210,-90 200,-10"/>
+    </g>
+    <g fill="#a7f3d0" opacity="0.6">
+      <polygon points="-190,-90 -170,-90 -180,-10"/>
+      <polygon points="-150,-90 -130,-90 -140,-10"/>
+      <polygon points="-110,-90 -90,-90 -100,-10"/>
+      <polygon points="-70,-90 -50,-90 -60,-10"/>
+      <polygon points="-30,-90 -10,-90 -20,-10"/>
+      <polygon points="10,-90 30,-90 20,-10"/>
+      <polygon points="50,-90 70,-90 60,-10"/>
+      <polygon points="90,-90 110,-90 100,-10"/>
+      <polygon points="130,-90 150,-90 140,-10"/>
+      <polygon points="170,-90 190,-90 180,-10"/>
+    </g>
+
+    <g fill="#34d399" opacity="0.85">
+      <polygon points="-210,90 -190,90 -200,10"/>
+      <polygon points="-170,90 -150,90 -160,10"/>
+      <polygon points="-130,90 -110,90 -120,10"/>
+      <polygon points="-90,90 -70,90 -80,10"/>
+      <polygon points="-50,90 -30,90 -40,10"/>
+      <polygon points="-10,90 10,90 0,10"/>
+      <polygon points="30,90 50,90 40,10"/>
+      <polygon points="70,90 90,90 80,10"/>
+      <polygon points="110,90 130,90 120,10"/>
+      <polygon points="150,90 170,90 160,10"/>
+      <polygon points="190,90 210,90 200,10"/>
+    </g>
+    <g fill="#a7f3d0" opacity="0.6">
+      <polygon points="-190,90 -170,90 -180,10"/>
+      <polygon points="-150,90 -130,90 -140,10"/>
+      <polygon points="-110,90 -90,90 -100,10"/>
+      <polygon points="-70,90 -50,90 -60,10"/>
+      <polygon points="-30,90 -10,90 -20,10"/>
+      <polygon points="10,90 30,90 20,10"/>
+      <polygon points="50,90 70,90 60,10"/>
+      <polygon points="90,90 110,90 100,10"/>
+      <polygon points="130,90 150,90 140,10"/>
+      <polygon points="170,90 190,90 180,10"/>
+    </g>
+
+    <g>
+      <ellipse cx="-200" cy="-80" rx="10" ry="4" fill="url(#bg-checker-light)" stroke="#022c22" stroke-width="0.6"/>
+      <ellipse cx="-200" cy="-68" rx="10" ry="4" fill="url(#bg-checker-light)" stroke="#022c22" stroke-width="0.6"/>
+      <ellipse cx="-200" cy="-56" rx="10" ry="4" fill="url(#bg-checker-light)" stroke="#022c22" stroke-width="0.6"/>
+      <ellipse cx="-200" cy="-44" rx="10" ry="4" fill="url(#bg-checker-light)" stroke="#022c22" stroke-width="0.6"/>
+      <ellipse cx="-200" cy="-32" rx="10" ry="4" fill="url(#bg-checker-light)" stroke="#022c22" stroke-width="0.6"/>
+
+      <ellipse cx="40" cy="-80" rx="10" ry="4" fill="url(#bg-checker-dark)" stroke="#022c22" stroke-width="0.6"/>
+      <ellipse cx="40" cy="-68" rx="10" ry="4" fill="url(#bg-checker-dark)" stroke="#022c22" stroke-width="0.6"/>
+      <ellipse cx="40" cy="-56" rx="10" ry="4" fill="url(#bg-checker-dark)" stroke="#022c22" stroke-width="0.6"/>
+
+      <ellipse cx="160" cy="-80" rx="10" ry="4" fill="url(#bg-checker-light)" stroke="#022c22" stroke-width="0.6"/>
+      <ellipse cx="160" cy="-68" rx="10" ry="4" fill="url(#bg-checker-light)" stroke="#022c22" stroke-width="0.6"/>
+
+      <ellipse cx="120" cy="80" rx="10" ry="4" fill="url(#bg-checker-dark)" stroke="#022c22" stroke-width="0.6"/>
+      <ellipse cx="120" cy="68" rx="10" ry="4" fill="url(#bg-checker-dark)" stroke="#022c22" stroke-width="0.6"/>
+      <ellipse cx="120" cy="56" rx="10" ry="4" fill="url(#bg-checker-dark)" stroke="#022c22" stroke-width="0.6"/>
+      <ellipse cx="120" cy="44" rx="10" ry="4" fill="url(#bg-checker-dark)" stroke="#022c22" stroke-width="0.6"/>
+
+      <ellipse cx="-160" cy="80" rx="10" ry="4" fill="url(#bg-checker-light)" stroke="#022c22" stroke-width="0.6"/>
+      <ellipse cx="-160" cy="68" rx="10" ry="4" fill="url(#bg-checker-light)" stroke="#022c22" stroke-width="0.6"/>
+      <ellipse cx="-160" cy="56" rx="10" ry="4" fill="url(#bg-checker-light)" stroke="#022c22" stroke-width="0.6"/>
+    </g>
+  </g>
+
+  <g transform="translate(470 220)">
+    <rect x="-26" y="-26" width="52" height="52" rx="6" fill="#f0fdf4" stroke="#022c22" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="5" fill="#022c22"/>
+    <circle cx="-12" cy="-12" r="3.5" fill="#022c22"/>
+    <circle cx="12" cy="-12" r="3.5" fill="#022c22"/>
+    <circle cx="-12" cy="12" r="3.5" fill="#022c22"/>
+    <circle cx="12" cy="12" r="3.5" fill="#022c22"/>
+  </g>
+  <g transform="translate(520 245)">
+    <rect x="-22" y="-22" width="44" height="44" rx="5" fill="#34d399" stroke="#022c22" stroke-width="1.5"/>
+    <circle cx="-9" cy="-9" r="3" fill="#022c22"/>
+    <circle cx="9" cy="9" r="3" fill="#022c22"/>
+    <circle cx="0" cy="0" r="3" fill="#022c22"/>
+  </g>
+
+  <text x="40" y="50" font-family="ui-sans-serif, system-ui" font-size="13" font-weight="600" fill="#6ee7b7" letter-spacing="2">BACKGAMMON 3D · UNITY × PHOTON</text>
+</svg>

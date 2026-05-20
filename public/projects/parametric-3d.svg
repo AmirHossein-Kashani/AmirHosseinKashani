@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="p3-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <linearGradient id="p3-face1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="p3-face2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#p3-bg)"/>
+  <g stroke="#10b981" stroke-width="0.4" opacity="0.25">
+    <path d="M0 80 L600 200"/><path d="M0 120 L600 240"/><path d="M0 160 L600 280"/>
+    <path d="M0 200 L600 320"/><path d="M100 0 L100 300"/><path d="M200 0 L200 300"/>
+    <path d="M300 0 L300 300"/><path d="M400 0 L400 300"/><path d="M500 0 L500 300"/>
+  </g>
+  <g transform="translate(300 150)">
+    <polygon points="0,-80 70,-40 70,40 0,80 -70,40 -70,-40" fill="url(#p3-face1)" opacity="0.95"/>
+    <polygon points="0,-80 70,-40 0,0 -70,-40" fill="url(#p3-face2)" opacity="0.9"/>
+    <polygon points="-70,-40 -70,40 0,80 0,0" fill="#065f46" opacity="0.85"/>
+    <polygon points="0,-80 70,-40 70,40 0,80 -70,40 -70,-40" fill="none" stroke="#a7f3d0" stroke-width="1.5"/>
+    <line x1="0" y1="-80" x2="0" y2="0" stroke="#a7f3d0" stroke-width="1" opacity="0.5"/>
+    <line x1="70" y1="-40" x2="0" y2="0" stroke="#a7f3d0" stroke-width="1" opacity="0.5"/>
+    <line x1="-70" y1="-40" x2="0" y2="0" stroke="#a7f3d0" stroke-width="1" opacity="0.5"/>
+    <circle cx="0" cy="-80" r="3.5" fill="#34d399"/>
+    <circle cx="70" cy="-40" r="3.5" fill="#34d399"/>
+    <circle cx="70" cy="40" r="3.5" fill="#34d399"/>
+    <circle cx="0" cy="80" r="3.5" fill="#34d399"/>
+    <circle cx="-70" cy="40" r="3.5" fill="#34d399"/>
+    <circle cx="-70" cy="-40" r="3.5" fill="#34d399"/>
+    <circle cx="0" cy="0" r="3.5" fill="#a7f3d0"/>
+  </g>
+  <text x="40" y="50" font-family="ui-sans-serif, system-ui" font-size="13" font-weight="600" fill="#6ee7b7" letter-spacing="2">PARAMETRIC 3D · THREE.JS</text>
+</svg>
