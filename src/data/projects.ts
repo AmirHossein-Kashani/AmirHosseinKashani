@@ -57,6 +57,7 @@ export const projects: Project[] = [
     blurb:
       'Extension of the AWSIM open-source simulator for autonomous buses — focused on blind-spot detection and autonomous-vehicle safety analysis. Collaboration between Amirkabir University and University of Tokyo.',
     image: '/projects/awsim.png',
+    video: '/projects/awsim.mp4',
     links: [
       {
         label: 'Project Page',
