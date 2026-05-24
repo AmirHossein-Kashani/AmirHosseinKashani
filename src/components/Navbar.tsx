@@ -6,6 +6,7 @@ type NavLink = {
 const links: NavLink[] = [
   { label: 'About', href: '#about' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Galaxy', href: '#galaxy' },
   { label: 'Publications', href: '#publications' },
   { label: 'Experience', href: '#experience' },
   { label: 'Education', href: '#education' },

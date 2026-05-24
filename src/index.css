@@ -64,3 +64,18 @@ body {
 .animate-blob {
   animation: blob 14s ease-in-out infinite;
 }
+
+@keyframes galaxy-flash {
+  0% {
+    box-shadow: 0 0 0 0 rgba(167, 139, 250, 0.6);
+    border-color: var(--color-accent);
+  }
+  100% {
+    box-shadow: 0 0 0 18px rgba(167, 139, 250, 0);
+  }
+}
+
+.galaxy-flash {
+  animation: galaxy-flash 1.8s ease-out;
+  border-color: var(--color-accent);
+}

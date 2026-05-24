@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import SectionHeader from './SectionHeader'
 import { projects, type Project, type Track } from '../data/projects'
 import { asset } from '../utils/asset'
@@ -36,6 +36,17 @@ function trackStyles(track: Track) {
 
 function Projects() {
   const [filter, setFilter] = useState<Filter>('all')
+
+  useEffect(() => {
+    const handler = (e: Event) => {
+      const detail = (e as CustomEvent<{ id: string }>).detail
+      const proj = projects.find((p) => p.id === detail?.id)
+      if (!proj) return
+      setFilter((prev) => (prev === 'all' || prev === proj.track ? prev : 'all'))
+    }
+    window.addEventListener('galaxy-reveal-project', handler as EventListener)
+    return () => window.removeEventListener('galaxy-reveal-project', handler as EventListener)
+  }, [])
 
   const visible = filter === 'all' ? projects : projects.filter((p) => p.track === filter)
 
@@ -93,7 +104,8 @@ function ProjectCard({ project }: { project: Project }) {
   const styles = trackStyles(project.track)
   return (
     <article
-      className={`group relative flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white transition-all hover:-translate-y-0.5 hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-900/40 ${styles.border}`}
+      id={`project-${project.id}`}
+      className={`group relative flex scroll-mt-24 flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white transition-all hover:-translate-y-0.5 hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-900/40 ${styles.border}`}
     >
       <div className="relative aspect-[16/9] overflow-hidden bg-gradient-to-br from-neutral-100 to-neutral-200 dark:from-neutral-900 dark:to-neutral-950">
         {project.video ? (

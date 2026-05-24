@@ -15,10 +15,11 @@ function Publications() {
         />
 
         <ul className="space-y-6">
-          {publications.map((pub) => (
+          {publications.map((pub, i) => (
             <li
               key={pub.title}
-              className="overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900/40"
+              id={`publication-${i}`}
+              className="scroll-mt-24 overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900/40"
             >
               <div className="grid gap-0 md:grid-cols-[1fr_1.4fr]">
                 {pub.image && (
