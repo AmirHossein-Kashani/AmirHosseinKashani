@@ -5,11 +5,11 @@ type NavLink = {
 
 const links: NavLink[] = [
   { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Education', href: '#education' },
   { label: 'Projects', href: '#projects' },
   { label: 'Galaxy', href: '#galaxy' },
   { label: 'Publications', href: '#publications' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Education', href: '#education' },
   { label: 'Skills', href: '#skills' },
   { label: 'Contact', href: '#contact' },
 ]

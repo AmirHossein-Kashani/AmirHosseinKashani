@@ -28,13 +28,13 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Experience />
+        <Education />
         <Projects />
         <Suspense fallback={<GalaxyFallback />}>
           <ProjectsGalaxy />
         </Suspense>
         <Publications />
-        <Experience />
-        <Education />
         <Skills />
         <Contact />
       </main>
